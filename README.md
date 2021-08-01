@@ -3,6 +3,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Unofficial-Devry-IT/Architecture?label=Commit%20Activity)
 
 #### Stats
+ [![Discord](https://discord.com/api/guilds/618254766396538901/widget.png)](https://discord.io/unofficial-DevryIT)
 ![GitHub issues](https://img.shields.io/github/issues/Unofficial-Devry-IT/Architecture?label=Issues)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Unofficial-Devry-IT/Architecture?label=PRs)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Unofficial-Devry-IT/Architecture?label=Size)
