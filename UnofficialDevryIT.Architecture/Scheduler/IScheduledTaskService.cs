@@ -32,7 +32,7 @@ namespace UnofficialDevryIT.Architecture.Scheduler
         /// </summary>
         /// <param name="id">Unique ID for task to execute</param>
         /// <returns></returns>
-        Task<ResultObject> ManuallyInvoke(string id);
+        Task<ResultObject> ManuallyInvoke(ulong id);
         
         /// <summary>
         ///  Add a task to be handled by this service
@@ -63,6 +63,6 @@ namespace UnofficialDevryIT.Architecture.Scheduler
         /// </summary>
         /// <param name="id">Id of task to remove</param>
         /// <returns>Anonymous type of bool (success), and string (error message)</returns>
-        Task<ResultObject> RemoveTask(Guid id);
+        Task<ResultObject> RemoveTask(ulong id);
     }
 }

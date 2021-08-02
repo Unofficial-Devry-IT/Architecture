@@ -17,7 +17,7 @@ namespace UnofficialDevryIT.Architecture.Scheduler
         /// <summary>
         /// Unique Identifier for this task
         /// </summary>
-        Guid Id { get; set; }
+        ulong Id { get; set; }
         
         /// <summary>
         /// Time in which this task should be ran next

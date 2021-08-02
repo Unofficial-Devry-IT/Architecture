@@ -107,10 +107,9 @@ namespace UnofficialDevryIT.Architecture.Services
             }
         }
 
-        public async Task<ResultObject> ManuallyInvoke(string id)
+        public async Task<ResultObject> ManuallyInvoke(ulong id)
         {
-            Guid guid = Guid.Parse(id);
-            var task = _scheduledTasks.FirstOrDefault(x => x.Task.Id.Equals(guid));
+            var task = _scheduledTasks.FirstOrDefault(x => x.Task.Id.Equals(id));
 
             if (task == null)
                 return ResultObject.Failure($"Could not locate task with id {id}");
@@ -166,7 +165,7 @@ namespace UnofficialDevryIT.Architecture.Services
             return Task.FromResult(ResultObject.Failure());
         }
 
-        public Task<ResultObject> RemoveTask(Guid id)
+        public Task<ResultObject> RemoveTask(ulong id)
         {
             var entry = _scheduledTasks.FirstOrDefault(x => x.Task.Id.Equals(id));
 
