@@ -5,10 +5,26 @@ using System.Threading.Tasks;
 namespace UnofficialDevryIT.Architecture.Scheduler
 {
     /// <summary>
-    /// Contractual obligation for a service/database to follow so <see cref="SchedulerService"/> works
+    /// Contractual obligation for a service/database to follow so <see cref="Services.SchedulerBackgroundService"/> works
     /// </summary>
     public interface IScheduleDbContext
     {
+        /// <summary>
+        /// Add a scheduled task to the database
+        /// </summary>
+        /// <param name="task"></param>
+        /// <typeparam name="TSchedule"></typeparam>
+        /// <returns></returns>
+        Task<TSchedule> AddSchedule<TSchedule>(TSchedule task) where TSchedule : class, IScheduledTask;
+
+        /// <summary>
+        /// Delete schedule from database
+        /// </summary>
+        /// <param name="task"></param>
+        /// <typeparam name="TSchedule"></typeparam>
+        /// <returns></returns>
+        Task<TSchedule> DeleteSchedule<TSchedule>(TSchedule task) where TSchedule : class, IScheduledTask;
+        
         /// <summary>
         /// Get all scheduled items of a specific type from the database
         /// </summary>
