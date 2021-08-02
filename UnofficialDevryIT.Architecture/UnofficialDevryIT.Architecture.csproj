@@ -4,7 +4,7 @@
         <TargetFramework>net5.0</TargetFramework>
         <OutputType>Library</OutputType>
         <IsPackable>true</IsPackable>
-        <Title>Architecture</Title>
+        <Title>UnofficialDevryIT.Architecture</Title>
         <Description>Foundation to build off of for various DeVry Community projects</Description>
         <PackageProjectUrl>https://github.com/Unofficial-Devry-IT/Architecture</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Unofficial-Devry-IT/Architecture</RepositoryUrl>
