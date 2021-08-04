@@ -73,7 +73,7 @@ namespace UnofficialDevryIT.Architecture.Services
 
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
-                var temp = assembly.ExportedTypes
+                var temp = assembly.GetTypes()
                     .Where(x => !x.IsInterface && !x.IsAbstract && x == typeof(IScheduledTaskExecutor));
 
                 foreach (var type in temp)

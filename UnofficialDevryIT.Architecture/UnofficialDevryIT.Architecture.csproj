@@ -9,7 +9,7 @@
         <PackageProjectUrl>https://github.com/Unofficial-Devry-IT/Architecture</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Unofficial-Devry-IT/Architecture</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageVersion>1.0.02</PackageVersion>
+        <PackageVersion>1.0.03</PackageVersion>
         <Authors>UnofficialDevryIT</Authors>
     </PropertyGroup>
 
